@@ -3,7 +3,7 @@ source "http://rubygems.org"
 gemspec
 
 # used by the dummy application
-gem 'actionpack', '~> 4.2.0'
+gem 'actionpack', '~> 5.0.0'
 gem 'sprockets-rails'
 gem 'coffee-rails'
 gem 'haml-rails'

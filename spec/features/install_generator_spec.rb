@@ -13,7 +13,7 @@ feature "Installing Jasminerice", :aruba => true do
 
   before do
     unset_bundler_env_vars
-    run_simple("bundle exec rails new testapp --skip-bundle --skip-activerecord")
+    run_simple("bundle exec rails new testapp --skip-bundle --skip-active-record")
     cd("testapp")
     append_to_file("Gemfile", %{\ngem "jasminerice", :path => "#{File.expand_path('../../../', __FILE__)}"\n})
     run_simple("bundle install --local")
