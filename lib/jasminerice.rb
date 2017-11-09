@@ -27,6 +27,7 @@ module Jasminerice
     initializer :assets, :group => :all do |app|
       app.config.assets.paths << Rails.root.join(Jasminerice.spec_path, "javascripts").to_s
       app.config.assets.paths << Rails.root.join(Jasminerice.spec_path, "stylesheets").to_s
+      app.config.assets.precompile += %w( jasmine.css jasmine.js spec.css spec.js jasminerice.js )
     end
 
     config.after_initialize do |app|

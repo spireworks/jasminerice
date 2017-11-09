@@ -34,7 +34,7 @@ Just include it in your `Gemfile`:
 
 ```ruby
 group :development, :test do
-  gem "jasminerice", :git => 'https://github.com/bradphelan/jasminerice.git'
+  gem "jasminerice", :git => 'https://github.com/spireworks/jasminerice.git'
 end
 ```
 
@@ -68,7 +68,7 @@ In the case where you need access to all your application javascripts then you c
 
 The Rails 3.1 asset pipeline using [Sprockets](https://github.com/sstephenson/sprockets) and [Tilt](https://github.com/rtomayko/tilt) ensure conversion to javascript.
 
-You can also use the `#= require` directive in your specs to pull in dependencies manually. Here's an example `spec/javascripts/example_spec.js.coffee`:
+You can also use the `#= require` directive in your specs to pull in dependencies manually. Here's an example `spec/javascripts/example_spec.coffee`:
 
 ```coffeescript
 #= require foo

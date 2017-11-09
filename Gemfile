@@ -3,20 +3,18 @@ source "http://rubygems.org"
 gemspec
 
 # used by the dummy application
-gem 'rails', '3.1.0'
-gem 'json'
-gem 'coffee-rails', "~> 3.1.0"
+gem 'actionpack', '~> 4.2.0'
+gem 'sprockets-rails'
+gem 'coffee-rails'
 gem 'haml-rails'
 
 # used by test rails apps
-gem 'sqlite3'
-gem 'sass-rails', "~> 3.1.0"
-gem 'uglifier'
 gem 'jquery-rails'
-gem 'turn', :require => false, :group => :test
 
 group :development, :test do
-  gem "rspec-rails"
+  gem "rspec-rails", '2.99.0'
   gem "capybara"
-  gem "aruba"
+  gem "aruba", '0.6.0'
+  gem 'selenium-webdriver'
+  gem 'geckodriver-helper'
 end
