@@ -12,7 +12,7 @@ gem 'haml-rails'
 gem 'jquery-rails'
 
 group :development, :test do
-  gem "rspec-rails", '2.99.0'
+  gem "rspec-rails"
   gem "capybara"
   gem "aruba", '0.6.0'
   gem 'selenium-webdriver'
